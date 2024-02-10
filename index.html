@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" contents="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Krishna Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/5d3c06e0a3.js" crossorigin="anonymous"></script>
+    <!-- <script src="script.js"></script> -->
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo1.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <!-- <li><a href="#services">Services</a></li> -->
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></Li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+
+            <div class="header-text">
+                <p >Software <p id="eng">Engineer</p></p>
+                <h1>Hi, I'm <br><span>Krishna</span> Patil<br>From India</h1>
+            </div>
+
+            
+        </div>
+    </div>
+    
+     <!-- --------------------about----------------------- -->
+
+     <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/about-pic.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p><br></p>
+                    <p>Hey! I am Krishna Patil completed my bachelors in Computer Science Engineering.
+                        Some of the best skills I learnt are Java in DSA,HTML,CSS,JavaScript.
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link"onclick="opentab(event,'skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab(event,'projects')">Projects</p>
+                        <p class="tab-links" onclick="opentab(event,'education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab " id ="skills">
+                        <ul>
+                            <li><span>Java </span><br>
+                            Coding</li>
+
+                            <li><span>Data Structures and Algorithms</span><br>
+                            Good in Algorithms and basic and advanced Data Structures</li>
+
+                            <li><span>Front End Development</span><br>
+                            HTML,CSS,JavaScript</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="projects">
+                        <ul>
+                            <li><span>Rock Paper Scissor Game</span><br>
+                            Html,css,js,virtual studio</li>
+
+                            <li><span>Currency Converter</span><br>
+                            Html,css,js,virtual studio</li>
+
+                            <li><span>Amazon Clone</span><br>
+                            Html,css,js,virtual studio</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>KLE College of Engineering And Technology</span><br>
+                            Computer Science Engineering</li>
+
+                            <li><span>Course at ApnaCollege</span><br>
+                            Java and DataStructure and Algorithm as Alpha 5.0</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -------------------Portfolio----------------------------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work1.jpg">
+                    <div class="layer">
+                        <h3>Rock Paper Scisoor Game</h3>
+                        <p>This Game is playing Rock,Paper,Scisoor with the computer if user wins user
+                            score increases else if comp wins comp score increases else draw both score remains
+                            same.
+                        </p>
+                        <a href="https://krishnkrishna.github.io/Rock-Paper-Scissor/"   target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work2.jpg">
+                    <div class="layer">
+                        <h3>Currency Converter</h3>
+                        <p>This project converts currency value from one country to Another</p>
+                        <a href="https://krishnkrishna.github.io/currency-Converter/"   target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work3.jpg">
+                    <div class="layer">
+                        <h3>Amazon Clone</h3>
+                        <p>This is a Clone website of official Amazon.com</p>
+                        <a href="https://krishnkrishna.github.io/Amazon-Clone/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="https://github.com/krishnkrishna/" target="_blank" class="btn">See More</a>
+        </div>
+    </div>
+
+    <!-- ------------------------Contact------------------------ -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>krishnapatil2424@gmail.com</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/krishna-patil-" target="_blank">
+                            <i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/krishnkrishna/" target="_blank">
+                            <i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.instagram.com/krishn_patil/" target="_blank">
+                            <i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                    <a href=""  class="btn btn2"download>Download CV</a>
+                </div>
+
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2"  id="submit-btn">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="script.js"></script>
+</html>
