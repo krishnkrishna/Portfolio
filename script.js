@@ -1,3 +1,4 @@
+//about Section
 const tablinks=document.getElementsByClassName("tab-links");
 const tabContents=document.getElementsByClassName("tab-contents");
 
@@ -15,7 +16,7 @@ function opentab(event,tabname){
     document.getElementById(tabname).classList.add("active-tab");
 }
 
-
+//Mobile view
 const sidemenu=document.getElementById("sidemenu");
 
 function openmenu(){
@@ -27,7 +28,7 @@ function closemenu(){
     sidemenu.style.right="-200px";
 }
 
-
+//Contact message
 const scriptURL = 'https://script.google.com/macros/s/AKfycbwTpRlqGI6oXadJdptzWYJ6_6TgfPztuITToc561rjOgAo8gtxen2QNmTVp8mVMRVaTGw/exec'
 const form = document.forms['submit-to-google-sheet']
 const msg=document.getElementById("msg");
@@ -46,7 +47,7 @@ const msg=document.getElementById("msg");
   });
 
 
-
+//contact form
 const form1 = document.forms['submit-to-google-sheet'];
 const submitButton = document.getElementById("submit-btn");
 
